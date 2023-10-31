@@ -1,5 +1,5 @@
 <?php 
-	$nom_hero = $_GET['heroName'];
+	//$race = $_GET['race'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,23 +16,23 @@
     <body id="home">
         <main>
             <section>
-                <h2>Bonjour <?php echo $nom_hero ?>, votre histoire va bientôt débuter mais il vous faut choisir une race.</h2>
+                <h2>Bonjour orc, votre histoire va bientôt débuter mais il vous faut choisir une race.</h2>
                 <div>
-                    <form method="get" action="choix_vie.php">
+                    <form method="get" action="choix_vie.phtml">
                         <div>
-                            <input type="radio" id="orc" name="race" value="orc">
+                            <input type="radio" id="orc" name="choice" value="orc">
                             <label for="orc">Orc</label>
                         </div>
                         <div>
-                            <input type="radio" id="elfe" name="race" value="elfe">
+                            <input type="radio" id="elfe" name="choice" value="elfe">
                             <label for="elfe">Elfe</label>
                         </div>
                         <div>
-                            <input type="radio" id="humain" name="race" value="humain">
+                            <input type="radio" id="humain" name="choice" value="humain">
                             <label for="humain">Humain</label>
                         </div>
                         <div>
-                            <input type="radio" id="nain" name="race" value="nain">
+                            <input type="radio" id="nain" name="choice" value="nain">
                             <label for="nain">Nain</label>
                         </div>
                         <div>

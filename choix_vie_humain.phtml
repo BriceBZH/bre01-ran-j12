@@ -1,5 +1,5 @@
 <?php 
-	$nom_hero = $_GET['heroName'];
+	//$race = $_GET['race'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,24 +16,20 @@
     <body id="home">
         <main>
             <section>
-                <h2>Bonjour <?php echo $nom_hero ?>, votre histoire va bientôt débuter mais il vous faut choisir une race.</h2>
+                <h2>Bonjour humain, votre histoire va bientôt débuter mais il vous faut choisir une race.</h2>
                 <div>
-                    <form method="get" action="choix_vie.php">
+                    <form method="get" action="choix_vie.phtml">
                         <div>
-                            <input type="radio" id="orc" name="race" value="orc">
-                            <label for="orc">Orc</label>
+                            <input type="radio" id="orc" name="choice" value="orc">
+                            <label for="orc">Vous faites parti d'une tribu de nomade</label>
                         </div>
                         <div>
-                            <input type="radio" id="elfe" name="race" value="elfe">
-                            <label for="elfe">Elfe</label>
+                            <input type="radio" id="elfe" name="choice" value="elfe">
+                            <label for="elfe">Vous êtes un seigneur de guerre et vous vous déplacez de bataille en bataille</label>
                         </div>
                         <div>
-                            <input type="radio" id="humain" name="race" value="humain">
-                            <label for="humain">Humain</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="nain" name="race" value="nain">
-                            <label for="nain">Nain</label>
+                            <input type="radio" id="humain" name="choice" value="humain">
+                            <label for="humain">Vous êtes un chevalier et avez grandi dans un chateau</label>
                         </div>
                         <div>
                             <input type="submit" value="Valider le choix" />

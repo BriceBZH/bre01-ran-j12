@@ -1,5 +1,6 @@
 <?php 
 	$nom_hero = $_GET['heroName'];
+	require("redirection.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +19,7 @@
             <section>
                 <h2>Bonjour <?php echo $nom_hero ?>, votre histoire va bientôt débuter mais il vous faut choisir une race.</h2>
                 <div>
-                    <form method="get" action="choix_vie.php">
+                    <form method="get" action="#?nom=<?php echo $nom_hero ?>">
                         <div>
                             <input type="radio" id="orc" name="race" value="orc">
                             <label for="orc">Orc</label>
